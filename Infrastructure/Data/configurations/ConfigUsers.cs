@@ -27,7 +27,7 @@ public class UserConguration : IEntityTypeConfiguration<User>
             .IsRequired()
             .HasMaxLength(50);
 
-        builder .Property(x => x.Email_verified_at)
+        builder.Property(x => x.Email_verified_at)
             .HasColumnName("email_validate_at");
 
         builder.Property(x => x.Estado)

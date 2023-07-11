@@ -8,7 +8,7 @@ public class User
     public string ? Nombre { get; set; }
     public string ?Email { get; set; }
     public string ? Email_verified_at { get; set; }
-    public string? Estado { get; set; }
+    public int Estado { get; set; }
     public int Created_by { get; set; }
     public int Updated_by { get; set; }
     public string ? Foto { get; set; }

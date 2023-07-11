@@ -2,8 +2,10 @@ using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddControllers();
 
 // Add services to the container.
+var serverVersion = new MySqlServerVersion(new Version(8, 0, 33));
 
 builder.Services.AddControllers();
 
